@@ -2,170 +2,70 @@
 <html>
 
 <head>
-    <title>Adobe Analytics 動作テスト用</title>
+    <title>Adobe Analytics / Target 動作テスト用</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="robots" content="noindex, nofollow">
 
-      <script type="text/javascript" >
+    <script type="text/javascript" >
         //for at.js v2.0:  prehiding snippet for Adobe Target with asynchronous Launch deployment 
       (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);
     </script>
-  
-    <!--Launch Setting launch/sc77_for_testing-->
-        <script type="text/javascript" src="//assets.adobedtm.com/742a3d6c7bbe/029fe3d9a87a/launch-5a99a2f8d7b0-development.min.js" async>
-        </script>
-    <!--Launch Setting launch/sc77_for_testing-->
 
-	<!-- AT recommendation catalog -->
-	<script type="text/javascript" >
-		function targetPageParams() { 
-		   return { 
-		      "entity": { 
-		         "categoryId": "My Category" 
-		      } 
-		   } 
-		}
-	</script>
-	<!-- AT recommendation catalog -->
+-----------
+
+    <!--Launch Setting launch/sc77/RECS  for_testing-->
+<!-- <script type="text/javascript" src="//assets.adobedtm.com/742a3d6c7bbe/310b894b7624/launch-21c05dca0727-development.min.js" async></script>
+-->
+        <script type="text/javascript" src="//assets.adobedtm.com/742a3d6c7bbe/08ced19593aa/launch-6463ff1e410d-development.min.js" async>
+        </script>
+    <!--Launch Setting launch/sc77/RECS  for_testing-->
 
 </head>
 
 <body>
-    <h1>動作検証用</h1>
-    <a href="4test_setting_memo.html">setting memo</a><br>
+    <h1>Target on-device desicioning 動作検証用</h1>
+    <p>target の動作確認用</p>
+
+    <!-- ********************************************  -->
+    <hr>
+    <ul class="01">
+        <li class="otsu"><a href="target_test.html">target_test.html へのリンク</a>    
+        <li class="otsu"><a href="target_test02.html">target_test02.html へのリンク</a>    
+        <li class="otsu"><a href="target_test03.html">target_test03.html へのリンク</a>    
+        <li>---------------------------
+        <li class="otsu"><a href="conversion_at.html">conversion_at.html へのリンク</a>    
+
+    </ul>
     <br>
-	<div id="1001"><a class="c1001" id="i1001" href="entry01.html">エントリーフォームに移動 (修正中)</a></div>
-	<div id="1002"><a class="c1001" id="i1002" href="youtube_streaming.html">YouTube ビデオの計測 (test02.html)</a></div>
-	<div id="1003"><a class="c1001" id="i1003" href="get_pagename.html">pagename 生成 (get_pagename.html)</a></div>
-	<div id="1004"><a class="c1001" id="i1004" href="get_date.html">日付の取得</a></div>
-	<div id="1005"><a class="c1001" id="i1005" href="s2s_data_insertion.html">server side data insert</a></div>
-	<div id="1006"><a class="c1001" id="i1006" href="video_indexer_sample.html">azure video indexer sample</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="2001"><a class="c2001" id="i2001" href="target/index.html">target のテストページ</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="3001"><a class="c3001" id="i3001" href="new_blank_page.html"  target="_blank">_blank でページ表示</a></div>
-	<div id="3002"><a class="c3001" id="i3002" href="/sc77_sc82/index.html">sc82 連携用に移動</a></div>
-	<div id="3003">----- shift jis 表示</div>
-	<div id="3004"><a class="c3001" id="i3004" href="/shift_jis/http://sc77.azurewebsites.net/shift_jis/"  target="_blank">_blank で文字化け状態表示</a></div>
-	<div id="3005"><a class="c3001" id="i3005" href="/shift_jis/http://sc77.azurewebsites.net/shift_jis/?src=sjis"  target="_blank">_blank で文字化け状態表示</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="4001"><a class="c4001" id="i4001" href="test_download.html">test download page</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="5001"><a class="c5001" id="i5001" href="virtual_rs.html">VRS</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="5002"><a class="c5001" id="i5002" href="/4test/nec/nec_rule_set.html">/nec/nec_rule_set.html (前の action の実行を待つ例) </a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="6001"><a class="c6001" id="i6001" href="/dtm/index.html">dtm を使ったサイトに移動 (cVRS)</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="7001"><a class="c7001" id="i7001" href="mobile_safari_chk.html">dtm の mobile condition</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="8001"><a class="c8001" id="i8001" href="https://sc82.azurewebsites.net/search_test/search_engine_test.html">search engine test (sc82)</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="9001"><a class="c9001" id="i9001" href="/4test/activitymap/index.html">activity map test</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="a001"><a class="ca001" id="ia001" href="/4test/nikko/index.html">/4test/nikko/index.html (change launch property)</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="b001"><a class="cb001" id="ib001" href="https://khagiwar.sc.omtrdc.net/optout.html">Analytics Opt-out link (/optout.html)</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="c001"><a class="cc001" id="ic001" href="recs/index.html">recommendation test</a></div>
-<!--	<div id="2002"><a class="c2001" id="i2002" href="target_test02.html">target test #02 (div なし)</a></div>
-	<div id="2003"><a class="c2001" id="i2003" href="target_test03.html">target test #03 (class="neko")</a></div>
-	<div id="2004"><a class="c2001" id="i2004" href="target_test04.html">target test 04 遷移元 a</a></div>
-	<div id="2005"><a class="c2001" id="i2005" href="target_test05.html">target test 05 遷移元 b</a></div>
-	<div id="2006"><a class="c2001" id="i2006" href="target_test06.html">target test 06 ** 遷移先</a></div>
-	<div id="2007"><a class="c2001" id="i2007" href="target_test07.html">target test 07  auto personalization 用</a></div>
-	<div id="2008"><a class="c2001" id="i2008" href="/4test/target/index.html">target test page 移動</a></div>
--->
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="d001"><a class="cd001" id="id001" href="/4test/counter/">event counter</a><br>
-	event10, 11, 12 が発火する</div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="e001"><a class="ce001" id="ie001" href="/4test/ip_adrs/">PHP と Javascript で IP adrs 表示</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="f001"><a class="cf001" id="if001" href="/4test/ondevice/">on-device decisioning test</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="20001"><a class="c20001" id="i20001" href="xxxx">xxxxxx</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="20002"><a class="c20002" id="i20002" href="xxxx">xxxxxx</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="20003"><a class="c20003" id="i20003" href="xxxx">xxxxxx</a></div>
-	<!-- ************************************************* -->
-	<hr>
-	<p></p>
-	<div id="20004"><a class="c20004" id="i20004" href="xxxx">xxxxxx</a></div>
-	<!-- ************************************************* -->
+    <!-- ********************************************  -->
+    <hr>
 
+    <div class="aa">
+        div class="aa"<br>
+        <img src="/4test/img/FLP01.png"><a href="xxx">xxxxx</a>&nbsp; &nbsp;
+        <img src="/4test/img/FLP02.png"><a href="zzz">zzzzzz</a><br>
+    </div>
 
-	<p></p>
-	<p></p>
- 
- sc77.azurewebsites.net/sbt_test/210526-000020_audience/
- 
-<div><a href="test.html"><img src="img/tora-cat.gif"></a><br></div>
+    <div class"rec_area">
+        **********************<br>
+        ここに recommendation をおく<br>
+        **********************<br>
+    </div>
 
+    <p></p>
+    <div class="block01">
+        aaaaa<br>
+        bbbbb<br>
+        cccccc<br>
+    </div>
+
+    <a href="conversion_at.html">conversion 用のリンク</a><br>
 <br>
 <br>
-
-<!--
-    <script type="text/javascript">
-    var now = new Date();
-      var Year = now.getFullYear();
-      var Month = now.getMonth()+1;
-      var Date1 = now.getDate();
-      var Hour = now.getHours();
-      var Min = now.getMinutes();
-      var Sec = now.getSeconds();
- alert (Year + "年" + Month + "月" + Date1 + "日" + Hour + ":" + Min + ":" + Sec);
- var x = Year + "/" + Month + "/" + Date1;
- alert (x);
- s.eProp12 = x;
-</script>
--->
-
-<!--
-<script  type="text/javascript"> 
-    pname ();
-</script>
--->
 
 <br>
 <a href="index.html">Return to Index</a><br>
+<a href="/4test/index.html">Return to /4test Index</a><br>
 <br>
 <hr>
 copyright 2020- kojih
